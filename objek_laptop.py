@@ -1,0 +1,116 @@
+def drawLaptop():
+    #bodybawah
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.8)
+    glVertex3f(.2,1.01,-1.8)
+    glVertex3f(.2,1.01,-1.5)
+    glVertex3f(-.2,1.01,-1.5)
+    glEnd()
+    
+     #bodyatas
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.019,-1.8)
+    glVertex3f(.2,1.019,-1.8)
+    glVertex3f(.2,1.019,-1.5)
+    glVertex3f(-.2,1.019,-1.5)
+    glEnd()
+    #keyboard
+    glBindTexture(GL_TEXTURE_2D, textures[5])
+
+    glBegin(GL_QUADS)
+    glColor3f(1, 1, 1)
+    glTexCoord2f(0.0, 1.0)
+    glVertex3f(-.18,1.02,-1.78)
+    glTexCoord2f(1.0, 1.0)
+    glVertex3f(.18,1.02,-1.78)
+    glTexCoord2f(1.0, 0.0)
+    glVertex3f(.18,1.02,-1.6)
+    glTexCoord2f(0.0, 0.0)
+    glVertex3f(-.18,1.02,-1.6)
+    glEnd()
+    
+     #bodysamping kanan
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(.2,1.01,-1.8)
+    glVertex3f(.2,1.01,-1.5)
+    glVertex3f(.2,1.019,-1.5)
+    glVertex3f(.2,1.019,-1.8)
+    glEnd()
+    
+     #bodysamping kiri
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.8)
+    glVertex3f(-.2,1.01,-1.5)
+    glVertex3f(-.2,1.019,-1.5)
+    glVertex3f(-.2,1.019,-1.8)
+    glEnd()
+    
+    
+     #bodysamping kiri
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.5)
+    glVertex3f(.2,1.01,-1.5)
+    glVertex3f(.2,1.019,-1.5)
+    glVertex3f(-.2,1.019,-1.5)
+    glEnd()
+    
+    #layar
+    #Depan
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.8)
+    glVertex3f(.2,1.01,-1.8)
+    glVertex3f(.2,1.4,-1.85)
+    glVertex3f(-.2,1.4,-1.85)
+    glEnd()
+    #belakang
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.805)
+    glVertex3f(.2,1.01,-1.805)
+    glVertex3f(.2,1.4,-1.855)
+    glVertex3f(-.2,1.4,-1.855)
+    glEnd()
+    #samping kanan
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(.2,1.01,-1.805)
+    glVertex3f(.2,1.01,-1.8)
+    glVertex3f(.2,1.4,-1.855)
+    glVertex3f(.2,1.4,-1.85)
+    glEnd()
+    #samping kiri
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.01,-1.805)
+    glVertex3f(-.2,1.01,-1.8)
+    glVertex3f(-.2,1.4,-1.855)
+    glVertex3f(-.2,1.4,-1.85)
+    glEnd()
+     #samping atas
+    glBegin(GL_QUADS)
+    glColor3f(0.8, 0.8, 0.8)
+    glVertex3f(-.2,1.4,-1.85)
+    glVertex3f(.2,1.4,-1.85)
+    glVertex3f(.2,1.4,-1.855)
+    glVertex3f(-.2,1.4,-1.855)
+    glEnd()
+    
+    
+    glBindTexture(GL_TEXTURE_2D, textures[6])
+    glBegin(GL_QUADS)
+    glColor3f(0.5, 0.5, 0.5)
+    glTexCoord2f(0.0, 0.0)
+    glVertex3f(-.18,1.05,-1.805)
+    glTexCoord2f(1.0, 0.0)
+    glVertex3f(.18,1.05,-1.805)
+    glTexCoord2f(1.0, 1.0)
+    glVertex3f(.18,1.38,-1.845)
+    glTexCoord2f(0.0, 1.0)
+    glVertex3f(-.18,1.38,-1.845)
+    glEnd()
