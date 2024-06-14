@@ -1,0 +1,22 @@
+def gambarJam():
+
+    glBegin(GL_QUADS)
+    glColor3f(0.0, 0.0, 0.0)
+    glVertex3f(-1.99,1,0)
+    glVertex3f(-1.99,1,0.5)
+    glVertex3f(-1.99,1.5,0.5)
+    glVertex3f(-1.99,1.5,0)
+    glEnd()
+    
+    glBindTexture(GL_TEXTURE_2D, textures[4])
+    glBegin(GL_QUADS)
+    glColor3f(1.0, 1.0, 1.0)
+    glTexCoord2f(0.0, 0.0)
+    glVertex3f(-1.98,1.05,0.05)
+    glTexCoord2f(1.0, 0.0)
+    glVertex3f(-1.98,1.05,0.45)
+    glTexCoord2f(1.0, 1.0)
+    glVertex3f(-1.98,1.45,0.45)
+    glTexCoord2f(0.0, 1.0)
+    glVertex3f(-1.98,1.45,0.05)
+    glEnd()
